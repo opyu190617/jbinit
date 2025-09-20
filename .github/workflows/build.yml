@@ -50,3 +50,9 @@ jobs:
         run: |
           cp src/ramdisk.dmg dist/ramdisk.development.dmg
           cp src/binpack.dmg dist/binpack.development.dmg
+
+      - name: upload result
+        uses: actions/upload-artifact@v1
+        with:
+          name: my-artifact
+          path: ${{ github.workspace }}/jbinit
