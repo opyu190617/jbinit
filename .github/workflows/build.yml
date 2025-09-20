@@ -54,5 +54,5 @@ jobs:
       - name: upload result
         uses: actions/upload-artifact@v1
         with:
-          name: my-artifact
+          name: jbinit-artifact
           path: ${{ github.workspace }}/jbinit
