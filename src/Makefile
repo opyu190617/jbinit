@@ -82,7 +82,7 @@ endif
 	rm -rf palera1nLoader
 
 tvloader.dmg: palera1nLoaderTV.ipa
-	rm -rf loader.dmg palera1nLoaderTV
+	rm -rf tvloader.dmg palera1nLoaderTV
 	mkdir palera1nLoaderTV
 	cd palera1nLoaderTV && unzip ../palera1nLoaderTV.ipa
 	$(call CREATE_UDRW_IMAGE,tvloader.img,2,palera1nLoaderTV,palera1nLoaderTV/Payload)
